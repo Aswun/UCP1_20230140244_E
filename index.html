@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beranda - EduSmart</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="popup.js"></script>
+</head>
+<body>
+  <header>
+    <h1>EduSmart</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="about.html">Tentang</a></li>
+        <li><a href="features.html">Fitur</a></li>
+        <li><a href="contact.html">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <img src="img/app.png" alt="Ilustrasi aplikasi" class="hero-img">
+      <div>
+        <h2>Belajar Jadi Lebih Mudah</h2>
+        <p>Platform pembelajaran interaktif untuk semua kalangan. Efisien, mudah, dan menyenangkan.</p>
+      </div>
+    </section>
+    <section class="icons">
+      <div><img src="img/icon1.png" alt="Icon 1"><p>Materi lengkap</p></div>
+      <div><img src="img/icon2.png" alt="Icon 2"><p>Interaktif</p></div>
+      <div><img src="img/icon3.png" alt="Icon 3"><p>Terjangkau</p></div>
+    </section>
+  </main>
+  <div id="popup" class="popup">
+    <p><strong>Promo Spesial:</strong> Daftar hari ini dan dapatkan diskon 50%!</p>
+    <button onclick="document.getElementById('popup').style.display='none'">Tutup</button>
+  </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Kontak - EduSmart</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function kirimPesan() {
+      alert('Pesan anda terkirim!');
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Hubungi Kami</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="about.html">Tentang</a></li>
+        <li><a href="features.html">Fitur</a></li>
+        <li><a href="contact.html">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="container">
+    <form onsubmit="kirimPesan(); return false;">
+      <label>Nama:<br><input type="text" name="nama" required></label><br><br>
+      <label>Email:<br><input type="email" name="email" required></label><br><br>
+      <label>Minat Belajar:<br><textarea name="minat" required></textarea></label><br><br>
+      <button type="submit">Kirim</button>
+    </form>
+  </main>
+</body>
+</html>
