@@ -100,3 +100,13 @@ button {
 button:hover {
   background-color: #345f59;
 }
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+}

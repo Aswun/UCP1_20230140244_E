@@ -64,9 +64,9 @@
       color: #3f706b;
     }
     .video-wrapper {
-    display: flex;
-    justify-content: center;
-    margin-top: 2em;
+      display: flex;
+      justify-content: center;
+      margin-top: 2em;
     }
 
     .video-wrapper iframe {
@@ -77,12 +77,25 @@
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      height: 40px;
+      width: auto;
+    }
 
   </style>
 </head>
 <body>
   <header>
-    <h1>Fitur EduSmart</h1>
+    <div class="header-content">
+      <h1>Fitur EduSmart</h1>
+      <img src="img/app.png" alt="Logo EduSmart" class="logo">
+    </div>
     <nav>
       <ul>
         <li><a href="index.html">Beranda</a></li>
@@ -92,6 +105,7 @@
       </ul>
     </nav>
   </header>
+
   <main class="container">
     <section>
       <h2>Kenali Fitur-Fitur Keren EduSmart!</h2>
