@@ -1,18 +1,69 @@
+<!-- features.html -->
+<!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8">
   <title>Fitur - EduSmart</title>
   <style>
-  body { font-family: Arial, sans-serif; background-color: #fff; color: #3f706b; padding: 1em; }
-  .gallery { display: flex; flex-wrap: wrap; gap: 1em; }
-  .gallery div { border: 1px solid #a39f86; padding: 0.5em; width: 30%; }
-  .gallery-img { width: 70; max-width: 70%; justify-self: center; }
-  iframe { margin-top: 1em; width: 100%; height: 300px; }
-  header { background-color: #3f706b; color: white; padding: 1em; }
-  nav ul { list-style: none; display: flex; gap: 1em; padding: 0; }
-  nav a { color: white; text-decoration: none; }
-</style>
-</head> 
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #ffffff;
+      color: #3f706b;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #3f706b;
+      color: white;
+      padding: 1em;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1em;
+      padding: 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 2em;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5em;
+      justify-content: space-between;
+    }
+    .gallery div {
+      border: 1px solid #a39f86;
+      padding: 1em;
+      width: 30%;
+      box-sizing: border-box;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+    .gallery img {
+      max-width: 100%;
+      height: 150px;
+      object-fit: contain;
+      margin-bottom: 0.5em;
+    }
+    iframe {
+      width: 100%;
+      height: 300px;
+      margin-top: 2em;
+      border: none;
+    }
+    h1, h2 {
+      color: #3f706b;
+    }
+  </style>
+</head>
 <body>
   <header>
     <h1>Fitur EduSmart</h1>
@@ -25,13 +76,39 @@
       </ul>
     </nav>
   </header>
-  <main>
+  <main class="container">
+    <section>
+      <h2>Kenali Fitur-Fitur Keren EduSmart!</h2>
+      <p>Kami percaya belajar harus menjadi pengalaman yang menyenangkan. Maka dari itu, kami merancang fitur-fitur yang tidak hanya membantu kamu memahami materi, tapi juga membuat kamu betah untuk terus belajar.</p>
+    </section>
+
     <div class="gallery">
-      <div><img src="img/fitur1.png" alt="Fitur 1" class="gallery-img"><p>Latihan Soal</p></div>
-      <div><img src="img/fitur2.png" alt="Fitur 2" class="gallery-img"><p>Video Interaktif</p></div>
-      <div><img src="img/fitur3.png" alt="Fitur 3" class="gallery-img"><p>Forum Diskusi</p></div>
+      <div>
+        <img src="img/fitur1.png" alt="Latihan Soal">
+        <p><strong>Latihan Soal Adaptif</strong><br>Soal otomatis menyesuaikan tingkat kesulitan dengan kemampuanmu. Cocok untuk mengukur progres belajar.</p>
+      </div>
+      <div>
+        <img src="img/fitur2.png" alt="Video Interaktif">
+        <p><strong>Video Pembelajaran Interaktif</strong><br>Dibuat oleh pengajar profesional dan didesain visual menarik agar kamu makin mudah paham.</p>
+      </div>
+      <div>
+        <img src="img/fitur3.png" alt="Forum Diskusi">
+        <p><strong>Forum Diskusi & Tanya Jawab</strong><br>Diskusi soal bareng pengguna lain, dapatkan tips, dan temukan solusi.</p>
+      </div>
+      <div>
+        <img src="img/fitur4.png" alt="Simulasi Virtual">
+        <p><strong>Simulasi & Eksperimen Virtual</strong><br>Belajar sains jadi lebih seru lewat lab virtual langsung dari browser.</p>
+      </div>
+      <div>
+        <img src="img/fitur5.png" alt="Tracking & Sertifikat">
+        <p><strong>Tracking Progress & Sertifikat</strong><br>Pantau perkembangan belajar dan dapatkan sertifikat otomatis dari setiap modul.</p>
+      </div>
     </div>
-    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video Pembelajaran" allowfullscreen></iframe>
+
+    <section>
+      <h2>Tonton Cuplikan EduSmart</h2>
+      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video Pembelajaran" allowfullscreen></iframe>
+    </section>
   </main>
 </body>
 </html>
